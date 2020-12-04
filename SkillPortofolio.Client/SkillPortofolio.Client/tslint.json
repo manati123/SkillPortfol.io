@@ -1,0 +1,60 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-react"
+    ],
+    "linterOptions": {
+        "exclude": [
+            "config/**/*.js",
+            "tools/**/*.js",
+            "tools/**/*.ts",
+            "provisioning/**/*.js",
+            "node_modules/**/*.ts"
+        ]
+    },
+    "rules": {
+        "quotemark": [
+            true,
+            "single",
+            "jsx-single"
+        ],
+        "indent": [
+            true,
+            "spaces",
+            2
+        ],
+        "semicolon": [
+            true,
+            "always",
+            "ignore-interfaces"
+        ],
+        "prefer-const":false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "space-before-function-paren": false,
+        "no-empty-interface": false,
+        "trailing-comma": true,
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": [
+            true, [
+                "~",
+                "@utils",
+                "@config",
+                "@api",
+                "@components",
+                "@containers",
+                "@domain",
+                "sp-rest-proxy",
+                "sp-build-tasks",
+                "scripts",
+                "services",
+                "loc"
+            ]
+        ],
+        "jsx-no-lambda": false,
+        "jsx-no-multiline-js": false,
+        "arrow-parens": false,
+        "max-line-length": false,
+        "no-string-literal": false
+    }
+}

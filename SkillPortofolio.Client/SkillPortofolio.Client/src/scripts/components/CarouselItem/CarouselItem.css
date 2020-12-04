@@ -1,0 +1,33 @@
+.spio-carousel-item{
+    height: 230px;
+    margin: 5px;
+    width: 25%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.spio-carousel-item:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    padding:  0 10px 30px 10px;
+}
+
+.spio-carousel-item:nth-of-type(even){
+    background-color: #71afe5;
+}
+
+.spio-carousel-item:nth-of-type(odd){
+    background-color: #deecf9;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+
+    .spio-carousel-item{
+        width: 100%;
+        height: 25%;
+    }
+  }

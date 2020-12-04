@@ -1,0 +1,56 @@
+.spio-carousel-container{
+    margin-top: 30px;
+    max-width: 80vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.spio-carousel-scroller{
+    overflow: hidden;
+    /* margin: 0 50px; */
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+}
+
+.spio-carousel-container > button{
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    font-size: 6px;
+}
+
+.spio-carousel-container > button:first-of-type{
+    font-size: 6px;
+}
+
+.spio-carousel-container > button:last-of-type{
+    font-size: 6px;
+}
+
+ .spio-carousel-container > button:hover{
+     background: transparent;
+     transform: scale(2);
+}  
+
+@media only screen and (max-width: 700px) {
+
+    .spio-carousel-container{
+        width: 80vw;
+    }
+
+    button{
+        display: none;
+    }
+
+    .spio-carousel-scroller {
+        margin: 0;
+        max-height: 400px;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+  }

@@ -1,0 +1,72 @@
+.skillportofolio-general-style {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 24px;
+}
+
+.skillportofolio-journey-description {
+    font-size: 22px;
+}
+
+.skillportofolio-journey-title {
+    text-align: center;
+}
+
+.skillportofolio-journey-coach {
+    text-align: right;
+}
+
+.skillportofolio-flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    //background-color: DodgerBlue;
+}
+
+.skillportofolio-flex-container>div {
+    width: 85%;
+    margin: 10px;
+    padding: 10%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.skillportofolio-journey-info {
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    padding: 5%;
+}
+
+.skillportofolio-journey-complete-button:hover {
+    background-color: rgb(157, 192, 40);
+}
+
+.skillportofolio-journey-body {
+    display: flex;
+}
+
+.skillportofolio-journey-skill {
+    background-color: #40587C;
+    a {
+        margin-top: 0;
+        background-color: transparent;
+    }
+}
+
+.skillportofolio-journey-subskill {
+    background-color: #8764B8;
+    a {
+        margin-top: 0;
+        background-color: transparent;
+    }
+}
+
+.skillportofolio-journey-skill>.skillportofolio-journey-action {
+    background-color: #27774c;
+    a {
+        margin-top: 0;
+        background-color: transparent;
+    }
+}

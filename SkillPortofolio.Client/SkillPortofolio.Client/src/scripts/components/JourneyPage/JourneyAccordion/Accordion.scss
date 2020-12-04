@@ -1,0 +1,63 @@
+.accordion{
+  margin: 5px;
+   background-color: #005a9e;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.7s;
+    font-size:20px;
+}
+.active, .accordion:hover {
+    background-color: #004578;
+  }
+  .accordion-content {
+    padding: 0 18px;
+    background-color: white;
+   // overflow: scroll;
+    overflow-x:hidden;
+  }
+.skills{
+  overflow-x:hidden;
+}
+.skillportofolio-accordion-skills{
+  overflow-x:hidden;
+}
+.accordion-action-points{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+.accordion-action-point{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #deecf9;
+  padding: 25px;
+}
+.skio-actionpoint-button{
+  font-size: 15px;
+  background-color: #1b9cfc;
+  color: #fff;
+  min-width: 6em;
+  padding: 7px 10px;
+}
+.skio-actionpoint-title{
+  font-size:23px;
+}
+.skio-skill-level{
+  font-size:20px;
+}
+.skio-skill-description{
+  font-size:24px;
+}
+.skio-complete-skill{
+  margin-top:20px;
+  margin-bottom:10px;
+  padding:20px;
+}

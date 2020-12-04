@@ -1,0 +1,67 @@
+ .spio-journeys-container{
+     margin-top:15px;
+     overflow: scroll;
+     overflow-x: hidden;
+     height:60vh;
+ }
+.spio-journeyrow{
+    list-style: none;   
+    color: #000;
+    padding-left: 18px;
+    padding-bottom: 8px;
+    margin-bottom:8px;
+
+    .go-to-journey-container {
+        display:flex;
+        justify-content: flex-end;
+        padding-right: 25px;
+        padding-bottom:5px;
+        height:100%;
+        .go-to-journey-button{
+            display: none;
+         background-color: transparent;
+         border: 3px solid white;
+         
+         a{
+            color:white;
+            font-size:15px;
+            text-decoration: none;
+         }
+        }
+        
+    }
+
+}
+#skillportofolio-journey-title{
+    font-size: 35px;
+}
+.skillportofolio-journeylist{
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    a{
+        display: inline-block;
+        height:100%;
+        width:100%;
+        text-decoration: none;
+        margin-top:10px;
+    }
+    a:hover{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:nth-of-type(2n+1){
+        background-color:#deecf9;
+        a{
+            margin-top: 0;
+            background-color: transparent;
+        }
+    }
+    a:nth-of-type(2n+2){
+        background-color:#71afe5;
+        a{
+            margin-top: 0;
+            background-color: transparent;
+        }
+    }
+}

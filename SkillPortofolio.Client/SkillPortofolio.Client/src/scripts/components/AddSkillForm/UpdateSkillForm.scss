@@ -1,0 +1,42 @@
+.spio-container-row{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .spio-skill-header{
+        display: flex;
+        .spio-header-close{
+            border:none;
+            margin-left:0;
+            border: none;
+            align-self: center;
+            background: none;
+            margin-right: 0;
+            padding:0;
+            .ms-Button-flexContainer{
+                border-radius: 50%;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            :hover{
+                transform: scale(1.2);
+            }
+        }
+        .spio-skill-title{
+            margin-left:0;
+        }
+    }
+    >div{
+        width: 70%;
+    }
+
+    >button{
+        width: 25%;
+    }
+}
+
+.box {
+    box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.68);
+    min-height: 200px;
+    background: white;
+    border-radius: 5px;
+  }

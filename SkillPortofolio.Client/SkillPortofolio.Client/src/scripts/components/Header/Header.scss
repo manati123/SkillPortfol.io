@@ -1,0 +1,16 @@
+.spio-nav{
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    
+        >li{
+            margin: 0 10px;
+            >.ms-Link{
+                color: #333;
+                font-size: 18px;
+                padding: 5px;
+            }
+        }
+    }
+}

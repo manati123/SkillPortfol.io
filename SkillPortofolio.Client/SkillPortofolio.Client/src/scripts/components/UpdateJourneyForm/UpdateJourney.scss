@@ -1,0 +1,58 @@
+.spio-journey-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+    .spio-journey-submit{
+      align-self: flex-end;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    
+    .spio-journey-form{
+      margin-top: 2rem;
+      width: 55%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      .spio-details-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .spio-level{
+          width: 60%;
+        }
+        .spio-duration{
+          width: 30%;
+        }
+      }
+      .spio-skills-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .spio-skills-dropdown{
+          width: 60%;
+        }
+  
+        .spio-submit-skill{
+          width: 30%;
+          align-self: flex-end;
+        }
+      }
+    }
+    .spio-createskill-form{
+        width: 60%;
+    }
+    .spio-editskill-form{
+      width: 60%;
+  }
+ }
+
+.box {
+    box-shadow: 1px 1px 35px -1px rgba(0,0,0,0.68);
+    min-height: 200px;
+    background: white;
+    border-radius: 5px;
+}

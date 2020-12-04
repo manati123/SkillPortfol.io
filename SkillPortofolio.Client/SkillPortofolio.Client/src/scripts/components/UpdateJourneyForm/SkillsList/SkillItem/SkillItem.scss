@@ -1,0 +1,44 @@
+.spio-skill-tile{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #deecf9;
+    .skill-detail{
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .edit-skill{
+        border: none;
+        align-self: center;
+        background: none;
+        margin-left: 0px;
+        margin-right: 10px;
+        .ms-Button-flexContainer{
+            border-radius: 50%;
+        }
+        :hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.spio-skill-tile:hover{
+    -webkit-box-shadow: 0px 4px 15px 8px rgba(0,0,0,0.21); 
+    box-shadow: 0px 4px 15px 8px rgba(0,0,0,0.21);
+    margin-left: 1rem;
+    transform: scale(1.1);
+    margin-right: 2rem;
+}

@@ -1,0 +1,49 @@
+.spio-wrapper{
+    display: flex;
+    div{
+        flex-grow: 1;
+        .ms-Button{
+            margin: 20px 0;
+            width: 150px;
+        }
+    }
+}
+
+.spio-rating-container{
+    height: 30px;
+    width: 150px;
+    background-color: #eaeaea;
+}
+
+.spio-rating-bar{
+    min-width: 0;
+    height: 100%;
+    background-color: #2b88d8;
+}
+
+.spio-actionpoints-container{
+    display: flex;
+    flex-wrap: wrap;
+    article{
+        color: #666;
+        background-color: #c7e0f4;
+        border-radius: 5px;
+        width: 25%;
+        flex-shrink: 0;
+        margin: auto;
+        *{
+            padding: 3px;
+        }
+        h4{
+            color: #333;
+            font-size: 16px;
+        }
+    }
+}
+
+.spio-actionpoint-item{
+    div{
+        border-radius: 5px 5px 0 0;
+        background-color: #71afe5;
+    }
+}

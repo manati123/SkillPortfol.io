@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+	<pnp:Preferences Author="Accesa" Version="1.0.0.0"></pnp:Preferences>
+	<pnp:Templates ID="SkillPortofolio">
+		<pnp:ProvisioningTemplate ID="DO-NOT-REMOVE-THIS" />
+		<pnp:ProvisioningTemplateFile ID="SiteColumns" File="SiteColumns.xml" />
+		<pnp:ProvisioningTemplateFile ID="SiteGroups" File="SiteGroups.xml" />
+		<pnp:ProvisioningTemplateFile ID="Lists" File="Lists.xml" />
+		<pnp:ProvisioningTemplateFile ID="SitePages" File="SitePages.xml" />
+		<pnp:ProvisioningTemplateFile ID="ContentTypes" File="ContentTypes.xml" />
+		<pnp:ProvisioningTemplateFile ID="ListsAfterFields" File="ListsAfterFields.xml" />
+	</pnp:Templates>
+</pnp:Provisioning>

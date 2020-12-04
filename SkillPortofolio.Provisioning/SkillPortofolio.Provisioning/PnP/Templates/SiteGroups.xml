@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:ProvisioningTemplate ID="SiteGroups" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+	<pnp:Security BreakRoleInheritance="true">
+		<pnp:SiteGroups>
+			<pnp:SiteGroup
+					 Title="Basic Users"
+					 Description="Group of Basic Users"
+					 Owner="Admins">
+			</pnp:SiteGroup>
+			<pnp:SiteGroup
+					 Title="Admins"
+					 Description="Group of Admins"
+					 Owner="Admins">
+			</pnp:SiteGroup>
+			<pnp:SiteGroup
+					 Title="Coaches"
+					 Description="Group of Coaches"
+					 Owner="Admins">
+			</pnp:SiteGroup>
+		</pnp:SiteGroups>
+		<pnp:Permissions>
+			<pnp:RoleAssignments>
+				<pnp:RoleAssignment
+				  Principal="Admins"
+				  RoleDefinition="Full Control"/>
+			</pnp:RoleAssignments>
+		</pnp:Permissions>
+	</pnp:Security>
+</pnp:ProvisioningTemplate>

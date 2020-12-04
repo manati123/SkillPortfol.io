@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:ProvisioningTemplate ID="ContentTypes" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+	<pnp:ContentTypes>
+		<pnp:ContentType ID="0x010002DD257A7CF9430588EBAF287FA65A46" Name="Action Point">
+			<pnp:FieldRefs>
+				<pnp:FieldRef ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" Name="spDescription" Required="true"/>
+				<pnp:FieldRef ID="{3696E7DC-357B-453E-B99D-EE60B9ACD70A}" Name="spResources" Required="true"/>
+			</pnp:FieldRefs>
+		</pnp:ContentType>
+		<pnp:ContentType ID="0x01000618B0D27FC047E4BC2A125F7F36BE2C" Name="Skill">
+			<pnp:FieldRefs>
+				<pnp:FieldRef ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" Name="spDescription" Required="true"/>
+				<pnp:FieldRef ID="{C67B663C-7459-4AD4-824D-588C3A30F7CA}" Name="spSubSkills" Required="false"/>
+				<pnp:FieldRef ID="{B12D3D2C-984D-44E3-8C61-D88A11C74B67}" Name="spActionPoints" Required="false"/>
+       			<pnp:FieldRef ID="{4AF81D1D-34F1-4420-B6C2-92202D5DE4A3}" Name="spLevel" Required="false"/>
+			</pnp:FieldRefs>
+		</pnp:ContentType>
+
+		<pnp:ContentType ID="0x01002DC69EE846A043C198FFA7EA810CBCC8" Name="Journey">
+			<pnp:FieldRefs>
+				<pnp:FieldRef ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" Name="spDescription" Required="true"/>
+				<pnp:FieldRef ID="{4AF81D1D-34F1-4420-B6C2-92202D5DE4A3}" Name="spLevel" Required="false"/>
+				<pnp:FieldRef ID="{E73F8945-12D9-43B1-BF5F-6FB70C1ABE4E}" Name="spRating" Required="false"/>
+				<pnp:FieldRef ID="{286634B9-DC67-4040-8DC1-9A493743D4EA}" Name="spAverageDuration" Required="false"/>
+				<pnp:FieldRef ID="{90E809CD-6645-4742-A19C-060E68EE2E4B}" Name="spSkills" Required="false"/>
+        		<pnp:FieldRef ID="{484552A9-6ABD-4CB0-AF34-3720BD768F19}" Name="spCoach" Required="false"/>
+			</pnp:FieldRefs>
+		</pnp:ContentType>
+
+		<pnp:ContentType ID="0x01008764F26DD6A54AF6A3A04B3C7C7BBC08" Name="User Action Point">
+			<pnp:FieldRefs>
+				<pnp:FieldRef ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" Name="spDescription" Required="true"/>
+				<pnp:FieldRef ID="{3696E7DC-357B-453E-B99D-EE60B9ACD70A}" Name="spResources" Required="true"/>
+				<pnp:FieldRef ID="{48BB65A0-9F8C-4672-A900-22C5AE60C1DB}" Name="spTrainee" Required="false"/>
+				<pnp:FieldRef ID="{7D109282-0701-425E-A6D8-F9DFD1CAD3D0}" Name="spStatus" Required="false"/>
+			</pnp:FieldRefs>
+		</pnp:ContentType>
+
+		<pnp:ContentType ID="0x01000B1B8427615D479A999B77275FAEF4EB" Name="User Skills">
+			<pnp:FieldRefs>
+				<pnp:FieldRef ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" Name="spDescription" Required="true"/>
+				<pnp:FieldRef ID="{96F11A60-A085-4924-8DE7-210976341ADD}" Name="spUserSubSkills" Required="false"/>
+				<pnp:FieldRef ID="{1423B738-E4A6-4ADB-B044-87248A2329C5}" Name="spUserActionPoints" Required="false"/>
+       			<pnp:FieldRef ID="{4AF81D1D-34F1-4420-B6C2-92202D5DE4A3}" Name="spLevel" Required="false"/>
+				<pnp:FieldRef ID="{7D109282-0701-425E-A6D8-F9DFD1CAD3D0}" Name="spStatus" Required="false"/>
+			</pnp:FieldRefs>
+		</pnp:ContentType>
+    
+    <pnp:ContentType ID="0x0100FDA25A1349D446D5A0F9BBF721208CEE" Name="User Journeys">
+      <pnp:FieldRefs>
+        <pnp:FieldRef ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" Name="spDescription" Required="true"/>
+        <pnp:FieldRef ID="{4AF81D1D-34F1-4420-B6C2-92202D5DE4A3}" Name="spLevel" Required="false"/>
+        <pnp:FieldRef ID="{E73F8945-12D9-43B1-BF5F-6FB70C1ABE4E}" Name="spRating" Required="false"/>
+        <pnp:FieldRef ID="{286634B9-DC67-4040-8DC1-9A493743D4EA}" Name="spAverageDuration" Required="false"/>
+        <pnp:FieldRef ID="{F2106556-1078-4E50-990F-0EE0D1BBAFCE}" Name="spUserSkills" Required="false"/>
+        <pnp:FieldRef ID="{B8349C94-0A79-4E97-91FD-A1ED5302A461}" Name="spStartDate" Required="true"/>
+        <pnp:FieldRef ID="{FC96F740-60C2-4A40-9270-1F98FAA05BF6}" Name="spEndDate"  Required="false"/>
+        <pnp:FieldRef ID="{C407C60D-E3F9-4B3A-A378-83E5EE2ED800}" Name="spDueDate" Required="false"/>
+        <pnp:FieldRef ID="{48BB65A0-9F8C-4672-A900-22C5AE60C1DB}" Name="spTrainee" Required="true"/>
+        <pnp:FieldRef ID="{78221423-E5F7-4A3D-9608-13FE0AA0A8F9}" Name="spReview" Required="false"/>
+        <pnp:FieldRef ID="{07BB9F12-566E-40B8-BA60-41E426288EE9}" Name="spJourneyRef" Required="true"/>
+        <pnp:FieldRef ID="{E53654E5-EBC7-4218-B83B-31D39D4ED65C}" Name="spJourneyStatus" Required="false"/>
+        <pnp:FieldRef ID="{484552A9-6ABD-4CB0-AF34-3720BD768F19}" Name="spCoach" Required="true"/>
+      </pnp:FieldRefs>
+    </pnp:ContentType>
+	</pnp:ContentTypes>
+</pnp:ProvisioningTemplate>

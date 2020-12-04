@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:ProvisioningTemplate Version="1" ID="ListsAfterFields" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+	<pnp:Lists>
+		<pnp:ListInstance Title="Action Points" TemplateType="100" Url="Lists/ActionPoints" ContentTypesEnabled="true" RemoveExistingContentTypes="false">		
+			<pnp:ContentTypeBindings>
+				<pnp:ContentTypeBinding ContentTypeID="0x010002DD257A7CF9430588EBAF287FA65A46" Default="true"/>
+			</pnp:ContentTypeBindings>
+			<pnp:Views RemoveExistingViews="true">
+				<View Name="AllActionPoints" 
+					  DefaultView="false" 
+					  Type="HTML" 
+					  DisplayName ="All Action Points"
+					  Url="{sitecollection}/Lists/ActionPoints/AllActionPoints.aspx"
+					  Level="1"
+					  BaseViewID="1"
+					  ContentTypeId ="0x01">		
+					<ViewFields>
+						<FieldRef Name="Title"/>
+						<FieldRef Name="spDescription"/>
+						<FieldRef Name="spResources"/>
+					</ViewFields>
+				</View>
+			</pnp:Views>
+		</pnp:ListInstance>
+		<pnp:ListInstance  Title="Skills" TemplateType="100" Url="Lists/Skills" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:ContentTypeBindings>
+				<pnp:ContentTypeBinding ContentTypeID="0x01000618B0D27FC047E4BC2A125F7F36BE2C" Default="true"/>
+			</pnp:ContentTypeBindings>
+			<pnp:Views RemoveExistingViews="true">
+				<View Name="AllSkills"
+							DefaultView="true"
+							Type="HTML"
+							DisplayName ="All Skills"
+							Url="{sitecollection}/Lists/Skills/AllSkills.aspx"
+							Level="1"
+							BaseViewID="1"
+							ContentTypeId ="0x01">
+					<ViewFields>
+						<FieldRef Name="Title"/>
+						<FieldRef Name="spDescription"/>
+						<FieldRef Name="spSubSkills"/>
+						<FieldRef Name="spActionPoints"/>
+						<FieldRef Name="spLevel"/>
+					</ViewFields>
+				</View>
+			</pnp:Views>
+		</pnp:ListInstance>
+		<pnp:ListInstance  Title="Journeys" TemplateType="100" Url="Lists/Journeys" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:ContentTypeBindings>
+				<pnp:ContentTypeBinding ContentTypeID="0x01002DC69EE846A043C198FFA7EA810CBCC8" Default="true"/>
+			</pnp:ContentTypeBindings>
+			<pnp:Views RemoveExistingViews="true">
+				<View Name="AllJourneys"
+							  DefaultView="true"
+							  Type="HTML"
+							  DisplayName ="All Journeys"
+							  Url="{sitecollection}/Lists/Journeys/AllJourneys.aspx"
+							  Level="1"
+							  BaseViewID="1"
+							  ContentTypeId ="0x01">
+					<ViewFields>
+						<FieldRef Name="Title"/>
+						<FieldRef Name="spDescription"/>
+						<FieldRef Name="spLevel"/>
+						<FieldRef Name="spRating"/>
+						<FieldRef Name="spAverageDuration"/>
+						<FieldRef Name="spSkills"/>
+            			<FieldRef Name="spCoach"/>
+					</ViewFields>
+				</View>
+			</pnp:Views>
+		</pnp:ListInstance>
+		<pnp:ListInstance  Title="User Action Points" TemplateType="100" Url="Lists/UserActionPoints" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:ContentTypeBindings>
+				<pnp:ContentTypeBinding ContentTypeID="0x01008764F26DD6A54AF6A3A04B3C7C7BBC08" Default="true"/>
+			</pnp:ContentTypeBindings>
+			<pnp:Views RemoveExistingViews="true">
+				<View Name="AllUserActionPoints"
+							  DefaultView="true"
+							  Type="HTML"
+							  DisplayName ="All User Action Points"
+							  Url="{sitecollection}/Lists/UserActionPoints/AllUserActionPoints.aspx"
+							  Level="1"
+							  BaseViewID="1"
+							  ContentTypeId ="0x01">
+					<ViewFields>
+						<FieldRef Name="Title"/>
+						<FieldRef Name="spDescription"/>
+						<FieldRef Name="spResources"/>
+						<FieldRef Name="spTrainee"/>
+						<FieldRef Name="spStatus"/>
+					</ViewFields>
+				</View>
+			</pnp:Views>
+		</pnp:ListInstance>
+		<pnp:ListInstance  Title="User Skills" TemplateType="100" Url="Lists/UserSkills" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:ContentTypeBindings>
+				<pnp:ContentTypeBinding ContentTypeID="0x01000B1B8427615D479A999B77275FAEF4EB" Default="true"/>
+			</pnp:ContentTypeBindings>
+			<pnp:Views RemoveExistingViews="true">
+				<View Name="AllUserSkills"
+							  DefaultView="true"
+							  Type="HTML"
+							  DisplayName ="All User Skills"
+							  Url="{sitecollection}/Lists/UserSkills/AllUserSkills.aspx"
+							  Level="1"
+							  BaseViewID="1"
+							  ContentTypeId ="0x01">
+					<ViewFields>
+            			<FieldRef Name="Title"/>
+						<FieldRef Name="spDescription"/>
+						<FieldRef Name="spUserSubSkills"/>
+						<FieldRef Name="spUserActionPoints"/>
+						<FieldRef Name="spLevel"/>
+						<FieldRef Name="spStatus"/>
+					</ViewFields>
+				</View>
+			</pnp:Views>
+		</pnp:ListInstance>
+    <pnp:ListInstance  Title="User Journeys" TemplateType="100" Url="Lists/UserJourneys" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+      <pnp:ContentTypeBindings>
+        <pnp:ContentTypeBinding ContentTypeID="0x0100FDA25A1349D446D5A0F9BBF721208CEE" Default="true"/>
+      </pnp:ContentTypeBindings>
+      <pnp:Views RemoveExistingViews="true">
+        <View Name="AllUserJourneys"
+							  DefaultView="true"
+							  Type="HTML"
+							  DisplayName ="All User Journeys"
+							  Url="{sitecollection}/Lists/UserJourneys/AllUserJourneys.aspx"
+							  Level="1"
+							  BaseViewID="1"
+							  ContentTypeId ="0x01">
+          <ViewFields>
+            <pnp:FieldRef Name="spDescription"/>
+            <pnp:FieldRef Name="spLevel"/>
+            <pnp:FieldRef Name="spRating"/>
+            <pnp:FieldRef Name="spAverageDuration"/>
+            <pnp:FieldRef Name="spUserSkills"/>
+            <pnp:FieldRef Name="spStartDate"/>
+            <pnp:FieldRef Name="spEndDate"/>
+            <pnp:FieldRef Name="spDueDate"/>
+            <pnp:FieldRef Name="spTrainee"/>
+            <pnp:FieldRef Name="spReview"/>
+            <pnp:FieldRef Name="spJourneyRef"/>
+            <pnp:FieldRef Name="spJourneyStatus"/>
+            <pnp:FieldRef Name="spCoach"/>
+
+          </ViewFields>
+        </View>
+      </pnp:Views>
+    </pnp:ListInstance>
+	</pnp:Lists>
+</pnp:ProvisioningTemplate>

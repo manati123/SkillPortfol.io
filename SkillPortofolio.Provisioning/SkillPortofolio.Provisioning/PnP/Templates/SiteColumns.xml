@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:ProvisioningTemplate ID="SiteColumns" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+	<pnp:SiteFields>
+		<Field ID="{C47472E5-36EC-4087-A9F1-A5B81C1571FD}" StaticName="spDescription" DisplayName="Description" Name="spDescription" Type="Note"/>
+		<Field ID="{3696E7DC-357B-453E-B99D-EE60B9ACD70A}" StaticName="spResources" DisplayName="Resources" Name="spResources" Type="Text"/>
+		<Field ID="{B8349C94-0A79-4E97-91FD-A1ED5302A461}" StaticName="spStartDate" DisplayName="Start Date" Name="spStartDate" Type="DateTime"/>
+		<Field ID="{FC96F740-60C2-4A40-9270-1F98FAA05BF6}" StaticName="spEndDate" DisplayName="End Date" Name="spEndDate" Type="DateTime"/>
+		<Field ID="{90E809CD-6645-4742-A19C-060E68EE2E4B}"
+			Type="LookupMulti"
+			Name="spSkills"
+			DisplayName="Skills"
+			StaticName="spSkills"
+			Required="FALSE"
+			EnforceUniqueValues="FALSE"
+			List="{{listid:Skills}}"
+			ShowField="Title"
+			Mult="TRUE"
+			Sortable="FALSE"
+			UnlimitedLengthInDocumentLibrary="TRUE"
+			SourceID ="{{listid:Skills}}"/>
+
+		<Field ID="{C67B663C-7459-4AD4-824D-588C3A30F7CA}"
+			Type="LookupMulti"
+			Name="spSubSkills"
+			DisplayName="Sub Skills"
+			StaticName="spSubSkills"
+			Required="FALSE"
+			EnforceUniqueValues="FALSE"
+			List="{{listid:Skills}}"
+			ShowField="Title"
+			Mult="TRUE"
+			Sortable="FALSE"
+			UnlimitedLengthInDocumentLibrary="TRUE"
+			SourceID ="{{listid:Skills}}"/>
+
+		<Field ID="{B12D3D2C-984D-44E3-8C61-D88A11C74B67}"
+           Type="LookupMulti"
+           Name="spActionPoints"
+           DisplayName="Action Points"
+           StaticName="spActionPoints"
+           Required="FALSE"
+           EnforceUniqueValues="FALSE"
+           List="{{listid:Action Points}}"
+           ShowField="Title"
+           Mult="TRUE"
+           Sortable="FALSE"
+           UnlimitedLengthInDocumentLibrary="TRUE"
+           SourceID ="{{listid:Action Points}}"/>
+		<Field ID="{E73F8945-12D9-43B1-BF5F-6FB70C1ABE4E}" Type="Number" StaticName="spRating" Name="spRating" DisplayName="Rating" Group="Journey Template"/>
+		<Field ID="{4AF81D1D-34F1-4420-B6C2-92202D5DE4A3}" Type="Choice" StaticName="spLevel" Name="spLevel" DisplayName="Level" Format="Dropdown" Group="Journey Template">
+			<CHOICES>
+				<CHOICE>Beginner</CHOICE>
+				<CHOICE>Intermediate</CHOICE>
+				<CHOICE>Advanced</CHOICE>
+				<CHOICE>Expert</CHOICE>
+			</CHOICES>
+		</Field>
+		<Field ID="{286634B9-DC67-4040-8DC1-9A493743D4EA}" Type="Number" StaticName="spAverageDuration" Name="spAverageDuration" DisplayName="Average Duration" Group="Journey Template"/>
+		<Field ID="{48BB65A0-9F8C-4672-A900-22C5AE60C1DB}" Type="Text" StaticName="spTrainee" Name="spTrainee" DisplayName="Trainee"/>
+		<Field ID="{7D109282-0701-425E-A6D8-F9DFD1CAD3D0}" Type="Choice" StaticName="spStatus" Name="spStatus" DisplayName="Status" Format="Dropdown">
+			<CHOICES>
+				<CHOICE>In Progress</CHOICE>
+				<CHOICE>Done</CHOICE>
+			</CHOICES>
+		</Field>
+    
+    <Field ID="{E53654E5-EBC7-4218-B83B-31D39D4ED65C}" Type="Choice" StaticName="spJourneyStatus" Name="spJourneyStatus" DisplayName="Journey status" Format="Dropdown">
+      <CHOICES>
+        <CHOICE>In progress</CHOICE>
+        <CHOICE>Done</CHOICE>
+        <CHOICE>Canceled</CHOICE>
+      </CHOICES>
+    </Field>
+		<Field ID="{C407C60D-E3F9-4B3A-A378-83E5EE2ED800}" Type="DateTime" StaticName="spDueDate" Name="spDueDate" DisplayName="Due Date"/>
+    <Field ID="{78221423-E5F7-4A3D-9608-13FE0AA0A8F9}" Type="Text" Name="spReview" StaticName="spReview" DisplayName="Review"/>
+    <Field ID="{484552A9-6ABD-4CB0-AF34-3720BD768F19}" Type="Text" Name="spCoach" StaticName="spCoach" DisplayName="Coach"/>
+    <Field 
+      ID="{07BB9F12-566E-40B8-BA60-41E426288EE9}" 
+      Type="Lookup" 
+      Name="spJourneyRef" 
+      StaticName="spJourneyRef" 
+      DisplayName="Journey Reference"
+      Required="TRUE"
+      EnforceUniqueValues="FALSE"
+      List="{{listid:Journeys}}"
+      ShowField="Title"
+      Mult="FALSE"
+      Sortable="FALSE"
+      UnlimitedLengthInDocumentLibrary="TRUE"
+      SourceID ="{{listid:Journeys}}"/>
+
+    <Field
+      ID="{F2106556-1078-4E50-990F-0EE0D1BBAFCE}"
+      Type="LookupMulti"
+      Name="spUserSkills"
+      StaticName="spUserSkills"
+      DisplayName="User Skills"
+      Required="false"
+      EnforceUniqueValues="FALSE"
+      List="{{listid:User Skills}}"
+      ShowField="Title"
+      Mult="TRUE"
+      Sortable="FALSE"
+      UnlimitedLengthInDocumentLibrary="TRUE"
+      SourceID="{{listid:User Skills}}"
+      />
+		
+	  <Field
+      ID="{96F11A60-A085-4924-8DE7-210976341ADD}"
+      Type="LookupMulti"
+      Name="spUserSubSkills"
+      StaticName="spUserSubSkills"
+      DisplayName="User Sub Skills"
+      Required="false"
+      EnforceUniqueValues="FALSE"
+      List="{{listid:User Skills}}"
+      ShowField="Title"
+      Mult="TRUE"
+      Sortable="FALSE"
+      UnlimitedLengthInDocumentLibrary="TRUE"
+      SourceID="{{listid:User Skills}}"
+      />
+	
+	 <Field ID="{1423B738-E4A6-4ADB-B044-87248A2329C5}"
+           Type="LookupMulti"
+           Name="spUserActionPoints"
+           DisplayName="User Action Points"
+           StaticName="spUserActionPoints"
+           Required="FALSE"
+           EnforceUniqueValues="FALSE"
+           List="{{listid:User Action Points}}"
+           ShowField="Title"
+           Mult="TRUE"
+           Sortable="FALSE"
+           UnlimitedLengthInDocumentLibrary="TRUE"
+           SourceID ="{{listid:User Action Points}}"/>
+
+	</pnp:SiteFields>
+</pnp:ProvisioningTemplate>

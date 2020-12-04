@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:ProvisioningTemplate Version="1" ID="Lists" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+	<pnp:Lists>
+		<pnp:ListInstance Title="Action Points" TemplateType="100" Url="Lists/ActionPoints" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:Security>
+				<pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+					<pnp:RoleAssignment Principal="Admins" RoleDefinition="Full Control"/>
+					<pnp:RoleAssignment Principal="Coaches" RoleDefinition="Edit"/>
+					<pnp:RoleAssignment Principal="Basic Users" RoleDefinition="Read"/>
+				</pnp:BreakRoleInheritance>
+			</pnp:Security>
+		</pnp:ListInstance>
+
+		<pnp:ListInstance  Title="Skills" TemplateType="100" Url="Lists/Skills" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:Security>
+				<pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+					<pnp:RoleAssignment Principal="Admins" RoleDefinition="Full Control"/>
+					<pnp:RoleAssignment Principal="Coaches" RoleDefinition="Edit"/>
+					<pnp:RoleAssignment Principal="Basic Users" RoleDefinition="Read"/>
+				</pnp:BreakRoleInheritance>
+			</pnp:Security>
+		</pnp:ListInstance>
+
+		<pnp:ListInstance  Title="Journeys" TemplateType="100" Url="Lists/Journeys" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:Security>
+				<pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+					<pnp:RoleAssignment Principal="Admins" RoleDefinition="Full Control"/>
+					<pnp:RoleAssignment Principal="Coaches" RoleDefinition="Edit"/>
+					<pnp:RoleAssignment Principal="Basic Users" RoleDefinition="Read"/>
+				</pnp:BreakRoleInheritance>
+			</pnp:Security>
+		</pnp:ListInstance>
+
+		<pnp:ListInstance  Title="User Action Points" TemplateType="100" Url="Lists/UserActionPoints" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:Security>
+				<pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+					<pnp:RoleAssignment Principal="Admins" RoleDefinition="Full Control"/>
+					<pnp:RoleAssignment Principal="Coaches" RoleDefinition="Edit"/>
+					<pnp:RoleAssignment Principal="Basic Users" RoleDefinition="Edit"/>
+				</pnp:BreakRoleInheritance>
+			</pnp:Security>
+		</pnp:ListInstance>
+
+		<pnp:ListInstance  Title="User Skills" TemplateType="100" Url="Lists/UserSkills" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+			<pnp:Security>
+				<pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+					<pnp:RoleAssignment Principal="Admins" RoleDefinition="Full Control"/>
+					<pnp:RoleAssignment Principal="Coaches" RoleDefinition="Edit"/>
+					<pnp:RoleAssignment Principal="Basic Users" RoleDefinition="Edit"/>
+				</pnp:BreakRoleInheritance>
+			</pnp:Security>
+		</pnp:ListInstance>
+
+    <pnp:ListInstance  Title="User Journeys" TemplateType="100" Url="Lists/UserJourneys" ContentTypesEnabled="true" RemoveExistingContentTypes="false">
+      <pnp:Security>
+        <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+          <pnp:RoleAssignment Principal="Admins" RoleDefinition="Full Control"/>
+          <pnp:RoleAssignment Principal="Coaches" RoleDefinition="Edit"/>
+          <pnp:RoleAssignment Principal="Basic Users" RoleDefinition="Edit"/>
+        </pnp:BreakRoleInheritance>
+      </pnp:Security>
+    </pnp:ListInstance>
+
+	</pnp:Lists>
+</pnp:ProvisioningTemplate>

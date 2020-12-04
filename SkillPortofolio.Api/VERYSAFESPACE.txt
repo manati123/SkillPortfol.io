@@ -1,0 +1,13 @@
+The app identifier has been successfully created.
+Client Id:  	8081e24a-9d21-4514-9054-8a640f1d43ea
+Client Secret:  	/NCMDlXQbs4uAuRZDkrWhAsHna/zBUeavfFQozkz1kw=
+Title:  	SkillPortfolio
+App Domain:  	localhost
+Redirect URI:  	https://localhost:5001/
+
+=====================================================================================
+Client Id:  	d6d96e7d-1dd0-4836-948a-7d590f485f7a
+Client Secret:  	lZa5dbWqgnbB/Aqx23Q+tqVNSDp52VlhHTAfSM1YeBY=
+Title:  	SkillPortfolio
+App Domain:  	localhost
+Redirect URI:  	https://localhost:52133/
